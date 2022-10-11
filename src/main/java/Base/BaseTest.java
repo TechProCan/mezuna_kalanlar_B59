@@ -93,7 +93,7 @@ public class BaseTest {
     @AfterClass
     public synchronized void tearDown() throws Exception {
         if (driver != null) {
-            driver.close();
+            //driver.close();
         }
         driver = null;
 

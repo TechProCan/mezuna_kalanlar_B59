@@ -13,6 +13,7 @@ public class TC001 extends BaseTest {
     @Test(description = "TC001")
     public void tc_001(Method method){
         allPages.mainPage().goTo_A101();
+        allPages.mainPage().accept_cookies();
 
     }
 }
