@@ -6,7 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -15,6 +16,7 @@ import java.time.Duration;
 import static Base.BaseTest.driver;
 
 public class BaseStepMethod {
+    private static final Logger LOGGER = LogManager.getLogger(BaseStepMethod.class);
     private WebDriverWait wait;
 
     public BaseStepMethod() {
@@ -26,7 +28,7 @@ public class BaseStepMethod {
         try {
             element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         } catch (Exception e) {
-           // LOGGER.error("Web element is not visible!");
+            LOGGER.error("Web element is not visible!");
         }
         return element;
     }
@@ -36,7 +38,7 @@ public class BaseStepMethod {
         try {
             element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
         } catch (Exception e) {
-           // LOGGER.error("Web element is not clickable!");
+            LOGGER.error("Web element is not clickable!");
         }
         return element;
     }
@@ -46,7 +48,7 @@ public class BaseStepMethod {
         try {
             element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         } catch (Exception e) {
-           // LOGGER.error("Web element not found in document!");
+           LOGGER.error("Web element not found in document!");
         }
         return element;
     }
@@ -69,7 +71,7 @@ public class BaseStepMethod {
         action.dragAndDrop(driver.findElement(locator1),driver.findElement(locator2)).pause(Duration.ofSeconds(second)).perform();
     }
     protected void checkStatusNetwork() throws IOException {
-        // LOGGER.info("User connecting to the Http Network status of the page.");
+         LOGGER.info("User connecting to the Http Network status of the page.");
         // getTest().info("User connecting to the Http Network status of the page.");
 
         HttpURLConnection cn = (HttpURLConnection) new URL(driver.getCurrentUrl()).openConnection();
@@ -79,7 +81,7 @@ public class BaseStepMethod {
         Integer c = cn.getResponseCode();
         System.out.println("Response Code : "+c);
 
-        //  LOGGER.info(driver.getCurrentUrl() + " Http status code: " + c);
+          LOGGER.info(driver.getCurrentUrl() + " Http status code: " + c);
         //  getTest().info(driver.getCurrentUrl() + " Http status code: " + c);
 
         Assert.assertFalse(c.toString().startsWith("4") || c.toString().startsWith("5"), c + "Invalid Link " + driver.getCurrentUrl());

@@ -1,0 +1,29 @@
+[INFO ] 2022-10-25 21:31:26.625 [main] Utils - [TestNG] Running:
+  C:\Users\PC\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[INFO ] 2022-10-25 21:31:30.202 [main] WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO ] 2022-10-25 21:31:30.411 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO ] 2022-10-25 21:31:53.425 [main] TC001 - info A101 e gider
+[WARN ] 2022-10-25 21:31:53.426 [main] TC001 - warn A101 e gider
+[FATAL] 2022-10-25 21:31:53.427 [main] TC001 - Fatal A101 e gider
+[INFO ] 2022-10-25 21:49:36.626 [main] Utils - [TestNG] Running:
+  C:\Users\PC\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[INFO ] 2022-10-25 21:49:38.381 [main] WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO ] 2022-10-25 21:49:38.465 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO ] 2022-10-25 21:51:14.663 [main] Utils - [TestNG] Running:
+  C:\Users\PC\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[INFO ] 2022-10-25 21:51:15.665 [main] WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO ] 2022-10-25 21:51:15.738 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO ] 2022-10-25 22:26:52.065 [main] Utils - [TestNG] Running:
+  C:\Users\PC\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+[INFO ] 2022-10-25 22:26:53.469 [main] WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[INFO ] 2022-10-25 22:26:53.607 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[INFO ] 2022-10-25 22:27:12.798 [main] MainPage - User go to https://www.a101.com.tr/
+[INFO ] 2022-10-25 22:27:12.798 [main] BaseStepMethod - User connecting to the Http Network status of the page.
+[INFO ] 2022-10-25 22:27:17.505 [main] BaseStepMethod - https://www.a101.com.tr/ Http status code: 200
+[INFO ] 2022-10-25 22:27:17.514 [main] MainPage - User check statusCode 
+[INFO ] 2022-10-25 22:27:17.728 [main] MainPage - User click cookies
+[INFO ] 2022-10-25 22:27:17.978 [main] MainPage - User send to elma for searching
